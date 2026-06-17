@@ -1,0 +1,103 @@
+/* reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    background-color: #081B31;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.choice {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #081B31;
+    transform: scale(1.05);
+}
+
+img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.score_board {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 80px;
+}
+
+.score {
+    text-align: center;
+}
+
+#player_score, #computer_score {
+    color: #081B31;
+    font-size: 3rem;
+    margin-top: 5px;
+}
+
+.msg-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#msg {
+    background-color: #081B31;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease;
+}
+
+/* utility classes */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
